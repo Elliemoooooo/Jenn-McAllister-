@@ -499,7 +499,27 @@ var soundtracks = {
     name: "Soundtrack",
     tracklist: [
 {
-        "name": "Drake - Laugh Now Cry Later",
+        "name": "ElyOtto - SUGARCRASH!",
+        "url": "https://audio.jukehost.co.uk/dwIhc8BTKkAkEFlNdishgxTQFp2w7hP8"
+      },
+      {
+        "name": "ElyOtto - SUGARCRASH!",
+        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+      },
+      {
+        "name": "ElyOtto - SUGARCRASH!",
+        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+      },
+      {
+        "name": "ElyOtto - SUGARCRASH!",
+        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+      },
+      {
+        "name": "ElyOtto - SUGARCRASH!",
+        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+      },
+      {
+        "name": "ElyOtto - SUGARCRASH!",
         "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
       }
     ]
@@ -734,4 +754,5 @@ function gameThemePicked() {
 gameThemePicked();
 
 //#endcode
+
 
