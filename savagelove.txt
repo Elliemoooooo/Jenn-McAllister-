@@ -6,7 +6,7 @@ campaignTrail_temp.election_json = [
             "year": 2016,
             "display_year": "2020 - White Palace of Victory",
             "summary": "<div style='overflow-y:scroll;height:200px;'> Fatigue, chaos, and isolation are the defining characteristics of the 2020 election. Haunted by lingering questions as Americans take one long look in the mirror and do not like what they see. They look at their choices for president and are not impressed. Trump’s gilded nostalgia vs. Castro’s vision of aesthetic change and renewed unity. The pandemic has altered how many people interact with each other. The protests have made it impossible to look away from the carnage. The economic strain has left voters at their wits' end.</p>\n\n<ul>\n<li>Donald Trump, ever defiant, ignores the warning signs and provides red meat to his loyal base with his bombastic, carnival-style rallies, frothing at the mouth about law & order, promising a triumphant recovery, and dismissing critics as enemies of the nation. For four years he’s taken a blowtorch to a wide array of issues, with grandiose bombasticity and fleeting concentration. Covid-19 provided the administration with an opportunity to define itself beyond the endless cacophony of noise and misery.\n\n\n\n</li>\n\n\n\n<li>Castro, meanwhile, embodies — or at least attempts to embody — the hope of a younger, more diverse generation. At 46 years of age, his message of compassion, reform, and inclusion strikes a chord with young Americans begging for any reason not to check out of politics.</li></ul>\n\n\nAs November nears, the air around Washington thickens. Both men are captured by their own ambition and belief that only they can rescue the nation from the depths of despair it wallows in. Will sanity be restored, or will the self-styled king, the 45th president, reign supreme once more?</p></div>",
-            "image_url": "https://i.imgur.com/KovmE1c.png",
+            "image_url": "https://files.catbox.moe/2vt8i3.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "123",
             "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
@@ -67,7 +67,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#000099",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://i.imgur.com/yO9KEor.gif",
+            "image_url": "https://files.catbox.moe/xurwo7.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -90,7 +90,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://i.imgur.com/xWgPFr0.png",
+            "image_url": "https://files.catbox.moe/btr4oe.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -113,7 +113,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://i.imgur.com/TkyPucB.png",
+            "image_url": "https://files.catbox.moe/td5zr4.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -136,7 +136,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://i.imgur.com/Osuqj6V.png",
+            "image_url": "https://files.catbox.moe/8wjca9.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -159,7 +159,7 @@ campaignTrail_temp.candidate_json = [
             "color_hex": "#0000FF",
             "secondary_color_hex": null,
             "is_active": 0,
-            "image_url": "https://i.imgur.com/gMPIxh0.png",
+            "image_url": "https://files.catbox.moe/l6zlru.png",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -282,7 +282,7 @@ document.body.background = "https://files.catbox.moe/7s2d0t.png";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#e6ecf0!important;}</style>";
 
-$("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/WpsjpJz.png)"
+$("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/up8ih9.png)"
 
 // Initialise custom music
 
@@ -649,7 +649,7 @@ const gameThemes = {
     $(".footer")[0].style.color = "#000";
 
     // Game window texture overlay
-    $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/WpsjpJz.png)";
+    $("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/up8ih9.png)";
 
     // Remove old injected styles
     document.querySelectorAll("style[data-theme-style]").forEach(e => e.remove());
@@ -734,3 +734,4 @@ function gameThemePicked() {
 gameThemePicked();
 
 //#endcode
+
