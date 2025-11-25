@@ -1,0 +1,736 @@
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 20,
+        "fields": {
+            "year": 2016,
+            "display_year": "2020 - White Palace of Victory",
+            "summary": "<div style='overflow-y:scroll;height:200px;'> Fatigue, chaos, and isolation are the defining characteristics of the 2020 election. Haunted by lingering questions as Americans take one long look in the mirror and do not like what they see. They look at their choices for president and are not impressed. Trump’s gilded nostalgia vs. Castro’s vision of aesthetic change and renewed unity. The pandemic has altered how many people interact with each other. The protests have made it impossible to look away from the carnage. The economic strain has left voters at their wits' end.</p>\n\n<ul>\n<li>Donald Trump, ever defiant, ignores the warning signs and provides red meat to his loyal base with his bombastic, carnival-style rallies, frothing at the mouth about law & order, promising a triumphant recovery, and dismissing critics as enemies of the nation. For four years he’s taken a blowtorch to a wide array of issues, with grandiose bombasticity and fleeting concentration. Covid-19 provided the administration with an opportunity to define itself beyond the endless cacophony of noise and misery.\n\n\n\n</li>\n\n\n\n<li>Castro, meanwhile, embodies — or at least attempts to embody — the hope of a younger, more diverse generation. At 46 years of age, his message of compassion, reform, and inclusion strikes a chord with young Americans begging for any reason not to check out of politics.</li></ul>\n\n\nAs November nears, the air around Washington thickens. Both men are captured by their own ambition and belief that only they can rescue the nation from the depths of despair it wallows in. Will sanity be restored, or will the self-styled king, the 45th president, reign supreme once more?</p></div>",
+            "image_url": "https://i.imgur.com/KovmE1c.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "123",
+            "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
+        }
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 20,
+        "year": 2016,
+        "is_premium": 0,
+        "display_year": "2020 - White Palace of Victory"
+    }
+]
+
+campaignTrail_temp.credits = "𝓜𝓮𝓮𝓻𝓴𝓪𝓽𝓗𝓲𝓼𝓽𝓸𝓻𝓲𝓪𝓷"
+
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1001,
+        "fields": {
+            "first_name": "Julián",
+            "last_name": "Castro",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Texas",
+            "priority": 1,
+            "description": "Securing the nomination was a bittersweet triumph for Julian Castro. Once seen as a rising star of the party, the avatar of their desires to turn the deep red state of Texas bright blue, his early campaign struggled to gain traction against better-known, more seasoned rivals. Yet, through persistence, weathering the constant polling shifts, and maintaining a disciplined message not augmented to fit a passing fad, Castro emerged battered, but proudly the nominee of a party in search of more than just victory this November.</p>\n\nBut this is politics. You do not advance without making more than a few enemies. Castro’s service is thin, making his ideology vague which can be an asset. He can define himself as a moderate, in the vein of stable, recognizable hand at the wheel many Americans yearn for after four-years of living in Trump’s mind palace of absurdity. He can look leftward and clasps his arms around Bernie Sanders and say if this is truly the last election, then let us stand for something before the lights go out.",
+            "color_hex": "#000099",
+            "secondary_color_hex": null,
+            "is_active": 1,
+            "image_url": "https://i.imgur.com/yO9KEor.gif",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 1002,
+        "fields": {
+            "first_name": "Dean",
+            "last_name": "Phillips",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Minnesota",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/xWgPFr0.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Mr. Phillips is an affable congressman from Minnesota. A calm, sensible man not known nationally. Perhaps milquetoast in this environment is a virtue. House Leader Nancy Pelosi said she’d like to see a “strong” Republican Party, and Phillip’s focus on bipartisanship could broaden your appeal beyond the expected resistance crowd.</p>\n\n\n\n\n<p>A wealthy entrepreneur turned public servant, Phillips wishes to remind voters compassion and capitalism are not mutually exclusive. Phillips presents a polished demeanor, one devoid of rage. When he debates Vice President Mike Pence he will not clash too much on policy, but present himself as a man of integrity and reason.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Cheri",
+            "last_name": "Bustos",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Illinois",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/TkyPucB.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Congresswoman Cheri Bustos is long in the tooth, presents Midwestern sensibilities that’ll aide Democrats in their quest to rebuild the “Blue Wall.” Bustos is a fundraising powerhouse, as chair of the Democratic Congressional Campaign Committee (DCCC) she oversaw a $300 million operation that helped Democrats regain the House Majority in 2018.</p>\n\n<p>However, she is not without her warts. It is widely excepted once Bustos term is up she’ll become a lobbyist, which heightens her reputation as a “Washington Insider.”\n\nBustos is a moderate, pragmatic choice that isn’t afraid to reach across the isle. People like bipartisanship until they learn what the votes were for, so this is both an asset and a liability depending how you plan to campaign. Lastly, she is a white woman and in this era liberals are wishing you’d diversify your ticket. Many are expecting a woman of color to fill your ticket.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Tom",
+            "last_name": "Wolf",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Pennsylvania",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/Osuqj6V.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "Tom Wolf would be an inspiring choice, despite potentially disappointing progressives who wished for a person of color to be selected instead. Wolf recently won re-election in Wisconsin with a commanding 17-point margin against Republican Scott Wagner, demonstrating broad appeal in a state Trump narrowly carried in 2016.</p>\n\nWolf however, is lukewarm on the idea of him being your running mate, calling it an “absolute no” in interviews and joking it would end his marriage. However, if you can convince him — or Mrs. Wolf — you have a tremendous asset at your disposal and can swing Pennsylvania back in the Democrat column. He is unapologetically pro-choice, vetoing a 20-week abortion ban, while maintaining a moderate image. If Castro wishes to present himself as the “return to normalcy” candidate, Wolf is the best choice.</p>A drawback to Wolf is his record leans centrist, vetoing aggressive progressive pushes like marijuana legalization and taxes issues like his slow response to fracking regulation.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50002,
+        "fields": {
+            "first_name": "Terri",
+            "last_name": "Sewell",
+            "election": 20,
+            "party": "Democratic",
+            "state": "Alabama",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://i.imgur.com/gMPIxh0.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Terri Sewell emerged as a dark horse speculative candidate for Vice President. A Harvard-educated attorney and the first black woman elected to Congress from Alabama, Sewell represented the state’s 7th district (a majority-Black, Democratic stronghold in the Black Belt region) and has strong ties to the civil rights movement through her Selma roots. With the emergence of Black Lives Matter as a political force, Sewell helps boost your bonafides with the group, and is a low-risk, high reward option.</p>\n\n<p>However, Progressives might wince at Sewell. Her record as standing opposed to Alexandra Ocasio-Cortez’ team in 2019 would alienate you in the eyes of the left. Critics might see her selection as “putting the socialists in their place”, exacerbating primary divisions rather than healing them. Alabama is not a swing state this cycle and likely won’t become one in our lifetimes. Tapping her as your running mate does little to change that.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50003,
+        "fields": {
+            "first_name": "Donald",
+            "last_name": "Trump",
+            "election": 20,
+            "party": "Republican",
+            "state": "Florida",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#9e0000",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 109261,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 1002
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 158435,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 50000
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 132207,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 50001
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 133277,
+        "fields": {
+            "candidate": 1001,
+            "running_mate": 50002
+        }
+    }
+]
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001,
+            50003
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001,
+            50003
+        ]
+    }
+]
+
+jet_data = {
+    "headerColor": "#ffffff",
+    "windowColor": "#e6ecf0",
+    "containerColor": "#ffffff",
+    "innerWindowColor": "#e6ecf0",
+    "bannerImageUrl": "https://files.catbox.moe/b4pa7k.png",
+    "backgroundImageUrl": "https://files.catbox.moe/7s2d0t.png",
+    "endingTextColor": "#000000",
+    "customQuote": "",
+    "gameTitle": ""
+}
+
+//#startcode
+
+
+corrr = '\n              <h2></h2>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#ffffff";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#e6ecf0";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#ffffff";
+
+document.getElementById("header").src = "https://files.catbox.moe/b4pa7k.png";
+
+document.body.background = "https://files.catbox.moe/7s2d0t.png";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#e6ecf0!important;}</style>";
+
+$("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/WpsjpJz.png)"
+
+// Initialise custom music
+
+$("#music_player")[0].children[0].style.display="none"
+$("#music_player")[0].children[1].style.display="none"
+
+document.getElementById("modLoadReveal").style.display="none"
+document.getElementById("modloaddiv").style.display="none"
+
+musicBox = document.getElementById("music_player")
+musicBox.style.display=""
+
+var trackSel;
+e = campaignTrail_temp
+e.selectedSoundtrack = 0
+
+toTime = (seconds) => {
+  var date = new Date(null);
+  date.setSeconds(seconds);
+  return date.toISOString().substr(11, 8);
+}
+
+generateTime = () => {
+    // Get the audio element
+    var audio = document.getElementById("campaigntrailmusic");
+
+    timeTracker = document.createElement("div");
+    timeTracker.style = `
+      text-align:left;
+      border-style:solid;
+      border-width:3px;
+      height:150px;
+      width:200px;
+      background-color:#637db0;
+      float:right;
+      padding: 10px;
+    `
+    $("#trackSelParent")[0].prepend(timeTracker);
+    $("#trackSelParent")[0].prepend(document.createElement("br"));
+
+    // Create a new element to display the current position of the audio
+    var positionDisplay = document.createElement("gg");
+    positionDisplay.id = "position-display";
+
+    // Create a new slider element to change the time
+    var timeSlider = document.createElement("input");
+    timeSlider.type = "range";
+    timeSlider.min = 0;
+    timeSlider.max = 1;
+    timeSlider.step = 0.001;
+    timeSlider.value = 0;
+    timeSlider.style.width = "200px";
+    timeSlider.id = "time-slider";
+
+    var pausePlay = document.createElement("button");
+    pausePlay.id = "position-display";
+    pausePlay.innerHTML = "<b>Pause</b>"
+    pausePlay.style.width = "100%";
+
+
+    pausePlay.addEventListener("click", event => {
+      event.preventDefault();
+      updatePositionDisplay();
+      let audio = document.getElementById("campaigntrailmusic");
+      if (audio.paused) {
+        audio.play();
+        event.target.innerHTML = "<b>Pause</b>";
+        return;
+      }
+      audio.pause();
+      event.target.innerHTML = "<b>Play</b>";
+      return;
+    })
+
+    var volumeLabel = document.createElement("gg");
+    volumeLabel.id = "volume-label";
+    volumeLabel.innerHTML = "<br><b>Volume: </b>"
+
+    var volumeSlider = document.createElement("input");
+    volumeSlider.type = "range";
+    volumeSlider.min = 0;
+    volumeSlider.max = 1;
+    volumeSlider.step = 0.001;
+    volumeSlider.value = 0;
+    volumeSlider.style.width = "200px";
+    volumeSlider.id = "volume-slider";
+
+
+    audio.volume = 1;
+    volumeSlider.value = 1;
+
+    timeTracker.appendChild(pausePlay);
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(positionDisplay);
+    timeTracker.appendChild(timeSlider);
+    timeTracker.appendChild(volumeLabel);
+    timeTracker.appendChild(volumeSlider);
+
+    updatePositionDisplay();
+
+    //for (let i = 0; i < 10; i++)
+    //timeTracker.append(document.createElement("br"));
+
+
+    // Function to update the position display
+    function updatePositionDisplay() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+    }
+
+    // Function to change the time of the audio
+    function changeTime() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      audio.currentTime = timeSlider.value * audio.duration;
+    }
+
+    updateVolume = event => {
+      audio.volume = event.target.value;
+    }
+    
+    // Update the position display and slider every second
+    setInterval(updatePositionDisplay, 1000);
+
+    // Listen for changes to the time slider and change the time of the audio
+    timeSlider.addEventListener("input", changeTime);
+    volumeSlider.addEventListener("input", updateVolume)
+}
+
+function newMusicPlayer() {
+  trackSel = document.createElement("div");
+  trackSel.id = "trackSelParent"
+  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#637db0;float:right;">`
+  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
+  for (i in soundtracks) {
+    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
+    }
+  }
+  z += `</select></b><br><br>`
+  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
+    z += b
+  }
+  z += "</div><br><br>"
+  trackSel.innerHTML = z
+
+  // select correct song
+
+  musicBox.appendChild(trackSel);
+  Array.from(document.getElementById("trackSel").children).filter(f=>{
+    return f.tagName == "LABEL"
+  }).map(f=>f.children[0])[0].checked = true
+
+  // set soundtrack changer
+
+  soundtrackSelector = document.getElementById("selectSoundtrack")
+  soundtrackSelector.onchange = function() {
+    for (i in soundtracks) {
+      if (soundtracks[i].name == soundtrackSelector.value) {
+        e.selectedSoundtrack = i
+        break
+      }
+    }
+    document.getElementById("trackSelParent").remove()
+    newMusicPlayer()
+  }
+
+  var matches = document.querySelectorAll('.trackSelector');
+
+  for (match in matches) {
+    matches[match].onchange = function() {
+      audio = $("#campaigntrailmusic")[0];
+      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+      audio.currentTime = 0
+    }
+  }
+
+  musicBox.children[2].loop = false
+  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+
+  musicBox.children[2].onended = function() {
+    console.log("next track")
+    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
+    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
+      return f.tagName == "LABEL"
+    }).map(f=>f.children[0])
+    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+    buttons[newSel].click()
+  }
+
+  for (w = 0; w < 7; w++) {
+    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+  }
+  
+  generateTime();
+}
+
+clamp = function(a, max, min, overflow=true) {
+  if (overflow) {
+    return a > max ? min : a < min ? max : a;
+  }
+  return a > max ? max : a < min ? min : a;
+}
+
+
+// Track list
+
+var soundtracks = {
+  0: {
+    name: "Soundtrack",
+    tracklist: [
+{
+        "name": "Drake - Laugh Now Cry Later",
+        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+      }
+    ]
+  }
+}
+
+// Set up new music player
+
+newMusicPlayer()
+
+
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = `
+/* --- Remove gray box around player --- */
+#trackSelParent, #trackSel {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Inner tracker box --- */
+#trackSelParent > div {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Track list hover effect --- */
+#trackSel label:hover {
+  background-color: #e8f5fe !important; /* keep hover effect if desired */
+  border-radius: 4px;
+}
+
+/* --- Slider colors --- */
+#time-slider, #volume-slider {
+  accent-color: #1d9bf0 !important;
+}
+
+/* --- Pause/Play button --- */
+#trackSelParent button {
+  background-color: #1d9bf0 !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 999px !important;
+  padding: 8px 0 !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease;
+}
+
+#trackSelParent button:hover {
+  background-color: #198cd8 !important;
+}
+.campaign_trail_start_emphasis {
+  background-color: #1DA1F2; /* Twitter red */
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #ffffff;          /* plain white */
+  border: 1px solid #e1e8ed;         /* subtle Twitter-gray border */
+  color: #14171a;                     /* dark Twitter text */
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 6px 12px;
+  border-radius: 6px;                 /* slightly rounded corners */
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+button:hover {
+  background-color: #f5f8fa;          /* light gray hover */
+  border-color: #aab8c2;              /* slightly darker border */
+}
+
+button:active {
+  background-color: #e6ecf0;          /* darker gray when pressed */
+  border-color: #8899a6;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+select {
+  background-color: #ffffff;           /* white background */
+  border: 1px solid #e1e8ed;          /* subtle gray border */
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #14171a;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+select:hover {
+  border-color: #aab8c2;              /* subtle hover effect */
+  background-color: #f5f8fa;
+}
+
+button:active {
+  background-color: #1681c2;        /* pressed effect */
+  border-color: #1681c2;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+select {
+  background-color: #ffffff;         /* white background */
+  border: 1px solid #e1e8ed;        /* subtle gray border */
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #14171a;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+select:hover {
+  border-color: #aab8c2;
+  background-color: #f5f8fa;
+}
+.inner_window_question {
+  height: auto;           /* automatically adjusts to content */
+  max-height: none;       /* no maximum height restriction */
+  overflow: visible;      /* show all overflowing content */
+}
+`;
+document.head.appendChild(style_overwrite);
+
+const gameThemes = {
+  "Light Mode": function () {
+    // Set theme colors
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#ffffff";
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#e6ecf0";
+
+    // Apply header and window colors
+    const gameWindow = $("#game_window")[0];
+    document.getElementsByClassName("game_header")[0].style.backgroundColor =
+      nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+    gameWindow.style.backgroundColor =
+      nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+    gameWindow.style.borderColor = "#c9c9c9";
+    $(".container")[0].style.backgroundColor = "#ffffff";
+
+    // Header and background images
+    document.getElementById("header").src = "https://files.catbox.moe/b4pa7k.png";
+    document.body.background = "https://files.catbox.moe/7s2d0t.png";
+    $(".footer")[0].style.color = "#000";
+
+    // Game window texture overlay
+    $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/WpsjpJz.png)";
+
+    // Remove old injected styles
+    document.querySelectorAll("style[data-theme-style]").forEach(e => e.remove());
+
+    // Inject new styles for Light Mode
+    const style = document.createElement("style");
+    style.setAttribute("data-theme-style", "true");
+    style.innerHTML = `
+      #results_container { color:#000000; }
+      .inner_window_w_desc { background-color:#e6ecf0!important; }
+      #final_results_description h3,
+      #overall_details_container h3,
+      #overall_election_details h4,
+      #main_content_area_reading p,
+      #main_content_area_reading h3.results_tab_header,
+      .inner_window_w_desc h3,
+      .overlay_window h3,
+      p#credits {
+        color: black;
+      }
+    `;
+    document.head.appendChild(style);
+  },
+
+  "Dark Mode": function () {
+    document.getElementById("header").src = "https://files.catbox.moe/b4pa7k.png";
+    document.body.style.backgroundColor = "#1a1a1a";
+    document.body.background = "https://i.imgur.com/rWpi0iE.png";
+    $(".container")[0].style.backgroundColor = "#222";
+
+    $(".game_header")[0].style.backgroundColor = "#333";
+    const gameWindow = $("#game_window")[0];
+    $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/Tuj0PE4.png)";
+    gameWindow.style.borderColor = "#444";
+
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000000";
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#303030";
+    $(".footer")[0].style.color = "#fff";
+
+    // Remove old injected styles
+    document.querySelectorAll("style[data-theme-style]").forEach(e => e.remove());
+
+    // Inject new styles for Dark Mode
+    const style = document.createElement("style");
+    style.setAttribute("data-theme-style", "true");
+    style.innerHTML = `
+      #results_container { color:#000000; }
+      .inner_window_w_desc { background-color:#363636!important; }
+      #final_results_description h3,
+      #overall_details_container h3,
+      #overall_election_details h4,
+      #main_content_area_reading p,
+      #main_content_area_reading h3.results_tab_header,
+      .inner_window_w_desc h3,
+      .overlay_window h3,
+      p#credits {
+        color: white;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+};
+
+// ======== Theme Picker ========
+const themePicker = document.getElementById("themePicker");
+const newThemePicker = document.createElement("select");
+newThemePicker.id = "themePicker";
+newThemePicker.addEventListener("change", gameThemePicked);
+
+let newInnerHTML = "";
+for (let theme in gameThemes) {
+  newInnerHTML += `<option value="${theme}">${theme}</option>`;
+}
+newThemePicker.innerHTML = newInnerHTML;
+themePicker.replaceWith(newThemePicker);
+
+function gameThemePicked() {
+  gameThemes[newThemePicker.value]();
+}
+
+// Set default theme
+gameThemePicked();
+
+//#endcode
