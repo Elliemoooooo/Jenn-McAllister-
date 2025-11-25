@@ -18,7 +18,6 @@ campaignTrail_temp.global_parameter_json = [
             "state_variance": 0.005,
             "question_count": 25,
             "default_map_color_hex": "#C9C9C9",
-            "no_state_map_color_hex": "#999999"
         }
     }
 ]
@@ -31,12 +30,12 @@ campaignTrail_temp.election_json = [
             "year": 2016,
             "display_year": "2020 - White Palace of Victory",
             "summary": "<div style='overflow-y:scroll;height:200px;'> Fatigue, chaos, and isolation are the defining characteristics of the 2020 election. Haunted by lingering questions as Americans take one long look in the mirror and do not like what they see. They look at their choices for president and are not impressed. Trump’s gilded nostalgia vs. Castro’s vision of aesthetic change and renewed unity. The pandemic has altered how many people interact with each other. The protests have made it impossible to look away from the carnage. The economic strain has left voters at their wits' end.</p>\n\n<ul>\n<li>Donald Trump, ever defiant, ignores the warning signs and provides red meat to his loyal base with his bombastic, carnival-style rallies, frothing at the mouth about law & order, promising a triumphant recovery, and dismissing critics as enemies of the nation. For four years he’s taken a blowtorch to a wide array of issues, with grandiose bombasticity and fleeting concentration. Covid-19 provided the administration with an opportunity to define itself beyond the endless cacophony of noise and misery.\n\n\n\n</li>\n\n\n\n<li>Castro, meanwhile, embodies — or at least attempts to embody — the hope of a younger, more diverse generation. At 46 years of age, his message of compassion, reform, and inclusion strikes a chord with young Americans begging for any reason not to check out of politics.</li></ul>\n\n\nAs November nears, the air around Washington thickens. Both men are captured by their own ambition and belief that only they can rescue the nation from the depths of despair it wallows in. Will sanity be restored, or will the self-styled king, the 45th president, reign supreme once more?</p></div>",
-            "image_url": "https://www.jetsimon.com/public/static/images/2016-election-photo.jpg",
+            "image_url": "https://files.catbox.moe/2vt8i3.png",
             "winning_electoral_vote_number": 270,
-            "advisor_url": "https://www.jetsimon.com/public/static/images/mook-lewandowski-2016.jpg",
+            "advisor_url": "123",
             "recommended_reading": "<ul>\n<li><a href=https://www.chicagotribune.com/opinion/editorials/ct-edit-chicago-tribune-biden-endorsement-20200925-lnyxsb5qvrftnjjmj3rnzj33jy-story.html>Our Case For Joe Biden</a></li>\n<li><a href=https://nationalinterest.org/feature/case-trump-166808>The Case For Trump</a></li>\n<li><a href=https://www.npr.org/2020/11/18/935730100/how-biden-won-ramping-up-the-base-and-expanding-margins-in-the-suburbs>How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs</a></li>\n<li><a href=https://www.prospectmagazine.co.uk/politics/donald-trump-joe-biden-us-election-almost-win-votes-concede>Why Did Trump Almost Win?</a></li>\n<li><a href=https://www.hoover.org/research/no-evidence-voter-fraud-guide-statistical-claims-about-2020-election>No Evidence For Voter Fraud: A Guide To Statistical Claims About The 2020 Election</a></li>\n</ul>",
             "has_visits": 1,
-            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "no_electoral_majority_image": "../static/images/2012-no-majority.jpg"
         }
     }
 ]
@@ -52,6 +51,8 @@ campaignTrail_temp.temp_election_list = [
 
 campaignTrail_temp.credits = "ElectoralUK"
 
+campaignTrail_temp.candidate_json = [
+    {
         "model": "campaign_trail.candidate",
         "pk": 1001,
         "fields": {
@@ -784,3 +785,4 @@ function gameThemePicked() {
 gameThemePicked();
 
 //#endcode
+
