@@ -960,12 +960,12 @@ const gameThemes = {
   "Dark Mode": function () {
     document.getElementById("header").src = "https://files.catbox.moe/b4pa7k.png";
     document.body.style.backgroundColor = "#1a1a1a";
-    document.body.background = "https://i.imgur.com/rWpi0iE.png";
+    document.body.background = "https://files.catbox.moe/169az4.png";
     $(".container")[0].style.backgroundColor = "#222";
 
     $(".game_header")[0].style.backgroundColor = "#333";
     const gameWindow = $("#game_window")[0];
-    $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/Tuj0PE4.png)";
+    $("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/c67ifi.png)";
     gameWindow.style.borderColor = "#444";
 
     nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000000";
