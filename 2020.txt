@@ -4,7 +4,7 @@ campaignTrail_temp.election_json = [
         "pk": 21,
         "fields": {
             "year": 2020,
-            "summary": "<p>Joe Biden and Donald Trump face off in a heated 2020 election campaign. Held in the wake of a COVID-19 pandemic and nationwide protests, turnout is expected to be through the roof. Can Joe Biden hold together a large enough coalition of anti-Trump voters to make Trump a one-term President, or will Trump pull of another huge upset after trailing in the polls?</p>",
+            "summary": "<div style='overflow-y:scroll;height:200px;'> Fatigue, chaos, and isolation are the defining characteristics of the 2020 election. Haunted by lingering questions as Americans take one long look in the mirror and do not like what they see. They look at their choices for president and are not impressed. Trump’s gilded nostalgia vs. Castro’s vision of aesthetic change and renewed unity. The pandemic has altered how many people interact with each other. The protests have made it impossible to look away from the carnage. The economic strain has left voters at their wits' end.</p>\n\n<ul>\n<li>Donald Trump, ever defiant, ignores the warning signs and provides red meat to his loyal base with his bombastic, carnival-style rallies, frothing at the mouth about law & order, promising a triumphant recovery, and dismissing critics as enemies of the nation. For four years he’s taken a blowtorch to a wide array of issues, with grandiose bombasticity and fleeting concentration. Covid-19 provided the administration with an opportunity to define itself beyond the endless cacophony of noise and misery.\n\n\n\n</li>\n\n\n\n<li>Castro, meanwhile, embodies — or at least attempts to embody — the hope of a younger, more diverse generation. At 46 years of age, his message of compassion, reform, and inclusion strikes a chord with young Americans begging for any reason not to check out of politics.</li></ul>\n\n\nAs November nears, the air around Washington thickens. Both men are captured by their own ambition and belief that only they can rescue the nation from the depths of despair it wallows in. Will sanity be restored, or will the self-styled king, the 45th president, reign supreme once more?</p></div>",
             "image_url": "https://www.jetsimon.com/public/static/images/2020-election-photo.jpg",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://www.jetsimon.com/public/static/images/dillon-stepien.jpg",
@@ -19,348 +19,163 @@ campaignTrail_temp.election_json = [
 
 campaignTrail_temp.candidate_json = [
     {
-        "model": "campaign_trail.candidate",
-        "pk": 300,
+         "pk": 1001,
         "fields": {
-            "first_name": "Joe",
-            "last_name": "Biden",
+            "first_name": "Julián",
+            "last_name": "Castro",
             "election": 21,
-            "party": "Democrat",
-            "state": "Delaware",
+            "party": "Democratic",
+            "state": "Texas",
             "priority": 1,
-            "description": "<p>Joe Biden came back from the dead to win the Democratic Party's nomination, and seems to enter the campaign slightly ahead in the polls against incumbent Donald Trump. Emotions are running high, even more than usual, in this campaign. Can Biden live up to his promise to calm tensions, or will he be overwhelmed by events?</p>",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
+            "description": "Securing the nomination was a bittersweet triumph for Julian Castro. Once seen as a rising star of the party, the avatar of their desires to turn the deep red state of Texas bright blue, his early campaign struggled to gain traction against better-known, more seasoned rivals. Yet, through persistence, weathering the constant polling shifts, and maintaining a disciplined message not augmented to fit a passing fad, Castro emerged battered, but proudly the nominee of a party in search of more than just victory this November.</p>\n\nBut this is politics. You do not advance without making more than a few enemies. Castro’s service is thin, making his ideology vague which can be an asset. He can define himself as a moderate, in the vein of stable, recognizable hand at the wheel many Americans yearn for after four-years of living in Trump’s mind palace of absurdity. He can look leftward and clasps his arms around Bernie Sanders and say if this is truly the last election, then let us stand for something before the lights go out.",
+            "color_hex": "#000099",
+            "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://www.jetsimon.com/public/static/images/joe-biden-2020.jpg",
-            "electoral_victory_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>Things may have been closer and more contested than you hoped for, but the final result remains. Can you help bring the country back together after a tumultuous few years? Or will you be seen as a lame duck from the first day -- unable to keep the two wings of your party coordinated? Time will tell.</p>",
-            "electoral_loss_message": "<h3>Sorry! You have lost the 2020 election.</h3><p>After an election in which many of your supporters claimed democracy itself was at stake, what happens now? Perhaps the party will need to go in a completely different direction in 2024. As for yourself, it seems that your long, illustrious political career has surely drawn to a close.</p>",
-            "no_electoral_majority_message": "<h3>Sorry! You have lost the 2020 election.</h3><p>In spite of the 269-269 tie in the electoral college, Republicans control a majority of state delegations in the House of Representatives. After an election in which many of your supporters claimed democracy itself was at stake, what happens now? Perhaps the party will need to go in a completely different direction in 2024.</p>",
-            "description_as_running_mate": "",
+            "image_url": "https://files.catbox.moe/xurwo7.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
         }
     },
     {
         "model": "campaign_trail.candidate",
-        "pk": 301,
+        "pk": 1002,
+        "fields": {
+            "first_name": "Dean",
+            "last_name": "Phillips",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Minnesota",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://files.catbox.moe/btr4oe.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Mr. Phillips is an affable congressman from Minnesota. A calm, sensible man not known nationally. Perhaps milquetoast in this environment is a virtue. House Leader Nancy Pelosi said she’d like to see a “strong” Republican Party, and Phillip’s focus on bipartisanship could broaden your appeal beyond the expected resistance crowd.</p>\n\n\n\n\n<p>A wealthy entrepreneur turned public servant, Phillips wishes to remind voters compassion and capitalism are not mutually exclusive. Phillips presents a polished demeanor, one devoid of rage. When he debates Vice President Mike Pence he will not clash too much on policy, but present himself as a man of integrity and reason.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50000,
+        "fields": {
+            "first_name": "Cheri",
+            "last_name": "Bustos",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Illinois",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://files.catbox.moe/td5zr4.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Congresswoman Cheri Bustos is long in the tooth, presents Midwestern sensibilities that’ll aide Democrats in their quest to rebuild the “Blue Wall.” Bustos is a fundraising powerhouse, as chair of the Democratic Congressional Campaign Committee (DCCC) she oversaw a $300 million operation that helped Democrats regain the House Majority in 2018.</p>\n\n<p>However, she is not without her warts. It is widely excepted once Bustos term is up she’ll become a lobbyist, which heightens her reputation as a “Washington Insider.”\n\nBustos is a moderate, pragmatic choice that isn’t afraid to reach across the isle. People like bipartisanship until they learn what the votes were for, so this is both an asset and a liability depending how you plan to campaign. Lastly, she is a white woman and in this era liberals are wishing you’d diversify your ticket. Many are expecting a woman of color to fill your ticket.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50001,
+        "fields": {
+            "first_name": "Tom",
+            "last_name": "Wolf",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Pennsylvania",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://files.catbox.moe/8wjca9.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "Tom Wolf would be an inspiring choice, despite potentially disappointing progressives who wished for a person of color to be selected instead. Wolf recently won re-election in Wisconsin with a commanding 17-point margin against Republican Scott Wagner, demonstrating broad appeal in a state Trump narrowly carried in 2016.</p>\n\nWolf however, is lukewarm on the idea of him being your running mate, calling it an “absolute no” in interviews and joking it would end his marriage. However, if you can convince him — or Mrs. Wolf — you have a tremendous asset at your disposal and can swing Pennsylvania back in the Democrat column. He is unapologetically pro-choice, vetoing a 20-week abortion ban, while maintaining a moderate image. If Castro wishes to present himself as the “return to normalcy” candidate, Wolf is the best choice.</p>A drawback to Wolf is his record leans centrist, vetoing aggressive progressive pushes like marijuana legalization and taxes issues like his slow response to fracking regulation.",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50002,
+        "fields": {
+            "first_name": "Terri",
+            "last_name": "Sewell",
+            "election": 21,
+            "party": "Democratic",
+            "state": "Alabama",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://files.catbox.moe/l6zlru.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Terri Sewell emerged as a dark horse speculative candidate for Vice President. A Harvard-educated attorney and the first black woman elected to Congress from Alabama, Sewell represented the state’s 7th district (a majority-Black, Democratic stronghold in the Black Belt region) and has strong ties to the civil rights movement through her Selma roots. With the emergence of Black Lives Matter as a political force, Sewell helps boost your bonafides with the group, and is a low-risk, high reward option.</p>\n\n<p>However, Progressives might wince at Sewell. Her record as standing opposed to Alexandra Ocasio-Cortez’ team in 2019 would alienate you in the eyes of the left. Critics might see her selection as “putting the socialists in their place”, exacerbating primary divisions rather than healing them. Alabama is not a swing state this cycle and likely won’t become one in our lifetimes. Tapping her as your running mate does little to change that.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50003,
+        "fields": {
+            "first_name": "Kamala",
+            "last_name": "Harris",
+            "election": 21,
+            "party": "Democratic",
+            "state": "California",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://files.catbox.moe/6gxxjo.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": "<p>Kamala Harris quickly became an unexpected yet appealing choice for Vice President. As a former prosecutor Attorney General of California and US Senator she built a profile shaped by the diversity and challenges of her home state. Her background gives her credibility on justice reform and her leadership experience adds stability without much political risk.</p>\n\n<p>Still some progressives remain wary. Her record as a tough on crime prosecutor continues to spark concern among those who want a sharper break from the past. California is already a solid Democratic state which means her selection would not shift the map much. For some that raises doubts about whether she brings enough strategic advantage despite her national stature.</p>",
+            "candidate_score": 1,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 50004,
         "fields": {
             "first_name": "Donald",
             "last_name": "Trump",
             "election": 21,
             "party": "Republican",
             "state": "Florida",
-            "priority": 2,
-            "description": "<p>President Donald Trump enters the campaign with the advantages of incumbency, yet seems to be the underdog for a second time. Can Trump piece together a winning coalition again, and will it be the same one that got him over the finish line in 2016? The pandemic and Black Lives Matter movement only serve to complicate his task even further.</p>",
-            "color_hex": "#FF0000",
-            "secondary_color_hex": "#FFA0A0",
-            "is_active": 1,
-            "image_url": "https://www.jetsimon.com/public/static/images/donald-trump-2020.jpg",
-            "electoral_victory_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>For the second time in a row, many analysts saw a victory for you as practically impossible. But whatever they say, it is clear that your Make America Great Again agenda has been vindicated. Where do you take things from here?</p>",
-            "electoral_loss_message": "<h3>Sorry! You have lost the 2020 election.</h3><p>After an election in which many of your supporters claimed democracy itself was at stake, what happens now? Many analysts believe the party will need to go in a completely different direction next time. As for yourself, will you take these results sitting down, or will you prepare yourself for an epic political comeback in 2024?</p>",
-            "no_electoral_majority_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>In spite of the 269-269 tie in the electoral college, Republicans control a majority of state delegations in the House of Representatives. A lot of liberals are absolutely distraught and outraged that the election came down to such a technicality, but hey, those are the rules!</p>",
-            "description_as_running_mate": "",
+            "priority": 1,
+            "description": "<p>Put description here</p>",
+            "color_hex": "#9e0000",
+            "secondary_color_hex": null,
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/candidateexample.png",
+            "electoral_victory_message": "This guy wins!",
+            "electoral_loss_message": "This guy loses!",
+            "no_electoral_majority_message": "We all win?",
+            "description_as_running_mate": null,
             "candidate_score": 1,
             "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 302,
-        "fields": {
-            "first_name": "Jo",
-            "last_name": "Jorgensen",
-            "election": 21,
-            "party": "Libertarian",
-            "state": "South Carolina",
-            "priority": 3,
-            "description": "'",
-            "color_hex": "#FFFF00",
-            "secondary_color_hex": "#FFFFC0",
-            "is_active": 0,
-            "image_url": "'",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "'",
-            "candidate_score": 1,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 303,
-        "fields": {
-            "first_name": "Howie",
-            "last_name": "Hawkins/Other",
-            "election": 21,
-            "party": "Green",
-            "state": "New York",
-            "priority": 4,
-            "description": "'",
-            "color_hex": "#00C100",
-            "secondary_color_hex": "#A1FFA1",
-            "is_active": 0,
-            "image_url": "'",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "'",
-            "candidate_score": 1,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 304,
-        "fields": {
-            "first_name": "Kamala",
-            "last_name": "Harris",
-            "election": 21,
-            "party": "Democrat",
-            "state": "California",
-            "priority": 5,
-            "description": "'",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/kamala-harris-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Kamala Harris is a Senator from California who made her own run for President in 2020. She would be acceptable to moderates and financial supporters, has some appeal to progressives, and brings diversity to the ticket. She's not the preferred choice of most progressives.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 305,
-        "fields": {
-            "first_name": "Susan",
-            "last_name": "Rice",
-            "election": 21,
-            "party": "Democrat",
-            "state": "Washington DC",
-            "priority": 6,
-            "description": "'",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/susan-rice-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Susan Rice was a UN Ambassador and a National Security Advisor to Barack Obama, and brings decades of foreign policy experience. She would be a true center-left pick, but has never run for elected office. Her foreign policy record would also be a turnoff to progressives.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 306,
-        "fields": {
-            "first_name": "Karen",
-            "last_name": "Bass",
-            "election": 21,
-            "party": "Democrat",
-            "state": "California",
-            "priority": 7,
-            "description": "'",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/karen-bass-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Karen Bass is a Congresswoman from California and Chair of the Congressional Black Caucus. She has taken more progressive policy stances (including support for Medicare For All) than some of the other candidates, with the attendant supporters and detractors.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 307,
-        "fields": {
-            "first_name": "Gretchen",
-            "last_name": "Whitmer",
-            "election": 21,
-            "party": "Democrat",
-            "state": "Michigan",
-            "priority": 8,
-            "description": "'",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/gretchen-whitmer-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Gretchen Whitmer is the Governor of Michigan who could bring some undecideds over the line in that state and region. She is seen as a mainstream Democrat with solid experience. Choosing her would anger some supporters who expect an African-American running-mate after this summer's protests.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 308,
-        "fields": {
-            "first_name": "Elizabeth",
-            "last_name": "Warren",
-            "election": 21,
-            "party": "Democrat",
-            "state": "Massachusetts",
-            "priority": 9,
-            "description": "'",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/elizabeth-warren-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Elizabeth Warren is a Senator from Massachusetts who made a serious run at the Democratic Nomination in 2020. She is generally seen as a solid progressive with a particular interest in financial reform and regulation. Choosing her would anger some supporters who expect an African-American running-mate after this summer's protests.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 309,
-        "fields": {
-            "first_name": "Mike",
-            "last_name": "Pence",
-            "election": 21,
-            "party": "Republican",
-            "state": "Indiana",
-            "priority": 10,
-            "description": "'",
-            "color_hex": "#FF0000",
-            "secondary_color_hex": "#FFA0A0",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/mike-pence-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Mike Pence has served as your Vice President for the past four years, sticking to all of your talking points and staying out of the limelight. Most feel he should be rewarded for this loyalty with another turn on the top of the ticket. He also helps shore up your support with social conservatives.</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 310,
-        "fields": {
-            "first_name": "Nikki",
-            "last_name": "Haley",
-            "election": 21,
-            "party": "Republican",
-            "state": "South Carolina",
-            "priority": 11,
-            "description": "'",
-            "color_hex": "#FF0000",
-            "secondary_color_hex": "#FFA0A0",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/nikki-haley-2020.jpg",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "<p>Nikki Haley has served as the Governor of South Carolina, and as a UN Ambassador. She could help you moderate your image and try to close the female vote. Choosing her would probably lead to hard feelings between yourself and Pence, but would your voters care?</p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 311,
-        "fields": {
-            "first_name": "Spike",
-            "last_name": "Cohen",
-            "election": 21,
-            "party": "Libertarian",
-            "state": "Maryland",
-            "priority": 12,
-            "description": "'",
-            "color_hex": "#FFFF00",
-            "secondary_color_hex": "#FFFFC0",
-            "is_active": 0,
-            "image_url": "'",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "'",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 312,
-        "fields": {
-            "first_name": "Angela",
-            "last_name": "Walker",
-            "election": 21,
-            "party": "Green",
-            "state": "Wisconsin",
-            "priority": 13,
-            "description": "'",
-            "color_hex": "#00C100",
-            "secondary_color_hex": "#A1FFA1",
-            "is_active": 0,
-            "image_url": "'",
-            "electoral_victory_message": "'",
-            "electoral_loss_message": "'",
-            "no_electoral_majority_message": "'",
-            "description_as_running_mate": "'",
-            "candidate_score": 0,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 313,
-        "fields": {
-            "first_name": "Val",
-            "last_name": "Demings",
-            "election": 21,
-            "party": "Democrat",
-            "state": "Florida",
-            "priority": 14,
-            "description": " ",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/val-demings-2020.jpg",
-            "electoral_victory_message": " ",
-            "electoral_loss_message": " ",
-            "no_electoral_majority_message": " ",
-            "description_as_running_mate": "<p>Val Demings is a Congresswoman and former police chief from Florida. She could allow Biden to select a black running mate with more moderate credentials than some of the other choices. However, she has had a limited national profile and may be a disappointment to the more progressive wing of the party.<p>",
-            "candidate_score": 0,
-            "running_mate": true
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 314,
-        "fields": {
-            "first_name": "Tammy",
-            "last_name": "Duckworth",
-            "election": 21,
-            "party": "Democrat",
-            "state": "Illinois",
-            "priority": 15,
-            "description": " ",
-            "color_hex": "#0000FF",
-            "secondary_color_hex": "#90C0FF",
-            "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/tammy-duckworth-2020.jpg",
-            "electoral_victory_message": " ",
-            "electoral_loss_message": " ",
-            "no_electoral_majority_message": " ",
-            "description_as_running_mate": "<p>Tammy Duckworth is a Senator from Illinois who served in Iraq and has been active in foreign policy issues. She could help in the Midwest, but was also born in Thailand (as a U.S. citizen) and will need to deflect questions about her eligibility. Additionally, many party activists are expecting an African-American to be selected as well.</p>",
-            "candidate_score": 0,
-            "running_mate": true
         }
     }
 ]
@@ -368,87 +183,68 @@ campaignTrail_temp.candidate_json = [
 campaignTrail_temp.running_mate_json = [
     {
         "model": "campaign_trail.running_mate",
-        "pk": 200,
+        "pk": 109261,
         "fields": {
-            "candidate": 300,
-            "running_mate": 304
+            "candidate": 1001,
+            "running_mate": 1002
         }
     },
     {
         "model": "campaign_trail.running_mate",
-        "pk": 201,
+        "pk": 158435,
         "fields": {
-            "candidate": 300,
-            "running_mate": 305
+            "candidate": 1001,
+            "running_mate": 50000
         }
     },
     {
         "model": "campaign_trail.running_mate",
-        "pk": 210,
+        "pk": 132207,
         "fields": {
-            "candidate": 300,
-            "running_mate": 314
+            "candidate": 1001,
+            "running_mate": 50001
         }
     },
     {
         "model": "campaign_trail.running_mate",
-        "pk": 209,
+        "pk": 133277,
         "fields": {
-            "candidate": 300,
-            "running_mate": 313
+            "candidate": 1001,
+            "running_mate": 50002
         }
     },
     {
         "model": "campaign_trail.running_mate",
-        "pk": 202,
+        "pk": 137204,
         "fields": {
-            "candidate": 300,
-            "running_mate": 306
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 203,
-        "fields": {
-            "candidate": 300,
-            "running_mate": 307
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 204,
-        "fields": {
-            "candidate": 300,
-            "running_mate": 308
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 205,
-        "fields": {
-            "candidate": 301,
-            "running_mate": 309
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 206,
-        "fields": {
-            "candidate": 301,
-            "running_mate": 310
-        }
-    },
-    {
-        "model": "campaign_trail.running_mate",
-        "pk": 207,
-        "fields": {
-            "candidate": 302,
-            "running_mate": 311
+            "candidate": 1001,
+            "running_mate": 50003
         }
     }
 ]
 
-campaignTrail_temp.credits = "Dan Bryan"
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001,
+            50004
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 20,
+        "candidates": [
+            1001,
+            50004
+        ]
+    }
+]
+
+
+campaignTrail_temp.credits = "ElectoralUK"
 
 campaignTrail_temp.global_parameter_json = [
     {
