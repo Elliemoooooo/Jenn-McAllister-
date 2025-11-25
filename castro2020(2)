@@ -308,4 +308,479 @@ document.body.background = "https://files.catbox.moe/7s2d0t.png";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#e6ecf0!important;}</style>";
 
+$("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/up8ih9.png)"
+
+// Initialise custom music
+
+$("#music_player")[0].children[0].style.display="none"
+$("#music_player")[0].children[1].style.display="none"
+
+document.getElementById("modLoadReveal").style.display="none"
+document.getElementById("modloaddiv").style.display="none"
+
+musicBox = document.getElementById("music_player")
+musicBox.style.display=""
+
+var trackSel;
+e = campaignTrail_temp
+e.selectedSoundtrack = 0
+
+toTime = (seconds) => {
+  var date = new Date(null);
+  date.setSeconds(seconds);
+  return date.toISOString().substr(11, 8);
+}
+
+generateTime = () => {
+    // Get the audio element
+    var audio = document.getElementById("campaigntrailmusic");
+
+    timeTracker = document.createElement("div");
+    timeTracker.style = `
+      text-align:left;
+      border-style:solid;
+      border-width:3px;
+      height:150px;
+      width:200px;
+      background-color:#637db0;
+      float:right;
+      padding: 10px;
+    `
+    $("#trackSelParent")[0].prepend(timeTracker);
+    $("#trackSelParent")[0].prepend(document.createElement("br"));
+
+    // Create a new element to display the current position of the audio
+    var positionDisplay = document.createElement("gg");
+    positionDisplay.id = "position-display";
+
+    // Create a new slider element to change the time
+    var timeSlider = document.createElement("input");
+    timeSlider.type = "range";
+    timeSlider.min = 0;
+    timeSlider.max = 1;
+    timeSlider.step = 0.001;
+    timeSlider.value = 0;
+    timeSlider.style.width = "200px";
+    timeSlider.id = "time-slider";
+
+    var pausePlay = document.createElement("button");
+    pausePlay.id = "position-display";
+    pausePlay.innerHTML = "<b>Pause</b>"
+    pausePlay.style.width = "100%";
+
+
+    pausePlay.addEventListener("click", event => {
+      event.preventDefault();
+      updatePositionDisplay();
+      let audio = document.getElementById("campaigntrailmusic");
+      if (audio.paused) {
+        audio.play();
+        event.target.innerHTML = "<b>Pause</b>";
+        return;
+      }
+      audio.pause();
+      event.target.innerHTML = "<b>Play</b>";
+      return;
+    })
+
+    var volumeLabel = document.createElement("gg");
+    volumeLabel.id = "volume-label";
+    volumeLabel.innerHTML = "<br><b>Volume: </b>"
+
+    var volumeSlider = document.createElement("input");
+    volumeSlider.type = "range";
+    volumeSlider.min = 0;
+    volumeSlider.max = 1;
+    volumeSlider.step = 0.001;
+    volumeSlider.value = 0;
+    volumeSlider.style.width = "200px";
+    volumeSlider.id = "volume-slider";
+
+
+    audio.volume = 1;
+    volumeSlider.value = 1;
+
+    timeTracker.appendChild(pausePlay);
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(document.createElement("br"));
+    timeTracker.appendChild(positionDisplay);
+    timeTracker.appendChild(timeSlider);
+    timeTracker.appendChild(volumeLabel);
+    timeTracker.appendChild(volumeSlider);
+
+    updatePositionDisplay();
+
+    //for (let i = 0; i < 10; i++)
+    //timeTracker.append(document.createElement("br"));
+
+
+    // Function to update the position display
+    function updatePositionDisplay() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      timeSlider.value = audio.duration ? audio.currentTime / audio.duration : 0;
+    }
+
+    // Function to change the time of the audio
+    function changeTime() {
+      positionDisplay.innerHTML = "<b>Time:</b> " + toTime(audio.currentTime) + "<br>";
+      audio.currentTime = timeSlider.value * audio.duration;
+    }
+
+    updateVolume = event => {
+      audio.volume = event.target.value;
+    }
+    
+    // Update the position display and slider every second
+    setInterval(updatePositionDisplay, 1000);
+
+    // Listen for changes to the time slider and change the time of the audio
+    timeSlider.addEventListener("input", changeTime);
+    volumeSlider.addEventListener("input", updateVolume)
+}
+
+function newMusicPlayer() {
+  trackSel = document.createElement("div");
+  trackSel.id = "trackSelParent"
+  let z = `<br><br><br><br><br><br><br><br><br><br><div id='trackSel' style="text-align:left;border-style:solid;border-width:3px;overflow-y: scroll;overflow-x: hidden;height:200px; width:400px;background-color:#637db0;float:right;">`
+  z += `<b><select id='selectSoundtrack'><option value='`+soundtracks[e.selectedSoundtrack].name+`'>`+soundtracks[e.selectedSoundtrack].name+"</option>"
+  for (i in soundtracks) {
+    if (soundtracks[e.selectedSoundtrack] != soundtracks[i]) {
+      z += `<option value='`+soundtracks[i].name+`'>`+soundtracks[i].name+`</option>`
+    }
+  }
+  z += `</select></b><br><br>`
+  // <label><input type="radio" name="option" value="option1">Option 1</label><br>
+  for (i in soundtracks[e.selectedSoundtrack].tracklist) {
+    let a = soundtracks[e.selectedSoundtrack].tracklist[i]
+    let b = `<label><input class="trackSelector" type="radio" name="trackSelector" value="`+i+`">`+a.name+`</label><br>`
+    z += b
+  }
+  z += "</div><br><br>"
+  trackSel.innerHTML = z
+
+  // select correct song
+
+  musicBox.appendChild(trackSel);
+  Array.from(document.getElementById("trackSel").children).filter(f=>{
+    return f.tagName == "LABEL"
+  }).map(f=>f.children[0])[0].checked = true
+
+  // set soundtrack changer
+
+  soundtrackSelector = document.getElementById("selectSoundtrack")
+  soundtrackSelector.onchange = function() {
+    for (i in soundtracks) {
+      if (soundtracks[i].name == soundtrackSelector.value) {
+        e.selectedSoundtrack = i
+        break
+      }
+    }
+    document.getElementById("trackSelParent").remove()
+    newMusicPlayer()
+  }
+
+  var matches = document.querySelectorAll('.trackSelector');
+
+  for (match in matches) {
+    matches[match].onchange = function() {
+      audio = $("#campaigntrailmusic")[0];
+      audio.src = soundtracks[e.selectedSoundtrack].tracklist[this.value].url
+      audio.currentTime = 0
+    }
+  }
+
+  musicBox.children[2].loop = false
+  musicBox.children[2].src = soundtracks[e.selectedSoundtrack].tracklist[0].url
+
+  musicBox.children[2].onended = function() {
+    console.log("next track")
+    let selected = Number(document.querySelector('input[name="trackSelector"]:checked').value);
+    let newSel = clamp(selected+1, soundtracks[e.selectedSoundtrack].tracklist.length-1, 0)
+    let buttons = Array.from(document.getElementById("trackSel").children).filter(f=>{
+      return f.tagName == "LABEL"
+    }).map(f=>f.children[0])
+    //let selectedIndex = buttons.map(f=>f.children[0]).map(f=>f.checked)
+    buttons[newSel].click()
+  }
+
+  for (w = 0; w < 7; w++) {
+    document.getElementById("trackSelParent").appendChild(document.createElement("br"))
+  }
+  
+  generateTime();
+}
+
+clamp = function(a, max, min, overflow=true) {
+  if (overflow) {
+    return a > max ? min : a < min ? max : a;
+  }
+  return a > max ? max : a < min ? min : a;
+}
+
+
+// Track list
+
+var soundtracks = {
+  0: {
+    name: "Soundtrack",
+    tracklist: [
+{
+        "name": "ElyOtto - SUGARCRASH!",
+        "url": "https://audio.jukehost.co.uk/dwIhc8BTKkAkEFlNdishgxTQFp2w7hP8"
+      },
+      {
+        "name": "Claire Rosinkranz - Backyard Boy",
+        "url": "https://audio.jukehost.co.uk/eoIUyce7mKI9tkHfdTOhUacn4THTpVL5"
+      },
+      {
+        "name": "Powfu - Death Bed",
+        "url": "https://audio.jukehost.co.uk/uklNR6tIvIFbKAkZeuLqo3GtsTUgD4r0"
+      },
+      {
+        "name": "BENEE - Supalonely",
+        "url": "https://audio.jukehost.co.uk/oK4WjfziZDAuotJSgunVbdxzjfjLk6e1"
+      },
+      {
+        "name": "Pop Smoke - What You Know Bout Love",
+        "url": "https://audio.jukehost.co.uk/Efmz7UZFB7jGNeGFceaiXehPyNID6QcY"
+      },
+      {
+        "name": "Internet Money ft. Don Toliver, Gunna & NAV - Lemonade",
+        "url": "https://audio.jukehost.co.uk/5fd9XrAg1M9BfdMfk86dPtMfMNClg7Pl"
+      },
+      {
+        "name": "Tessa Netting - The 2020 Song",
+        "url": "https://audio.jukehost.co.uk/EgXqzoMVGqkJSqcxWA9La6RP2YCxMSI5"
+      }
+    ]
+  }
+}
+
+// Set up new music player
+
+newMusicPlayer()
+
+
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = `
+/* --- Remove gray box around player --- */
+#trackSelParent, #trackSel {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Inner tracker box --- */
+#trackSelParent > div {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Track list hover effect --- */
+#trackSel label:hover {
+  background-color: #e8f5fe !important; /* keep hover effect if desired */
+  border-radius: 4px;
+}
+
+/* --- Slider colors --- */
+#time-slider, #volume-slider {
+  accent-color: #1d9bf0 !important;
+}
+
+/* --- Pause/Play button --- */
+#trackSelParent button {
+  background-color: #1d9bf0 !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 999px !important;
+  padding: 8px 0 !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease;
+}
+
+#trackSelParent button:hover {
+  background-color: #198cd8 !important;
+}
+.campaign_trail_start_emphasis {
+  background-color: #1DA1F2; /* Twitter red */
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #ffffff;          /* plain white */
+  border: 1px solid #e1e8ed;         /* subtle Twitter-gray border */
+  color: #14171a;                     /* dark Twitter text */
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 6px 12px;
+  border-radius: 6px;                 /* slightly rounded corners */
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+button:hover {
+  background-color: #f5f8fa;          /* light gray hover */
+  border-color: #aab8c2;              /* slightly darker border */
+}
+
+button:active {
+  background-color: #e6ecf0;          /* darker gray when pressed */
+  border-color: #8899a6;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+select {
+  background-color: #ffffff;           /* white background */
+  border: 1px solid #e1e8ed;          /* subtle gray border */
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #14171a;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+select:hover {
+  border-color: #aab8c2;              /* subtle hover effect */
+  background-color: #f5f8fa;
+}
+
+button:active {
+  background-color: #1681c2;        /* pressed effect */
+  border-color: #1681c2;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+select {
+  background-color: #ffffff;         /* white background */
+  border: 1px solid #e1e8ed;        /* subtle gray border */
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: #14171a;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+select:hover {
+  border-color: #aab8c2;
+  background-color: #f5f8fa;
+}
+.inner_window_question {
+  height: auto;           /* automatically adjusts to content */
+  max-height: none;       /* no maximum height restriction */
+  overflow: visible;      /* show all overflowing content */
+}
+`;
+document.head.appendChild(style_overwrite);
+
+const gameThemes = {
+  "Light Mode": function () {
+    // Set theme colors
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#ffffff";
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#e6ecf0";
+
+    // Apply header and window colors
+    const gameWindow = $("#game_window")[0];
+    document.getElementsByClassName("game_header")[0].style.backgroundColor =
+      nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+    gameWindow.style.backgroundColor =
+      nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+    gameWindow.style.borderColor = "#c9c9c9";
+    $(".container")[0].style.backgroundColor = "#ffffff";
+
+    // Header and background images
+    document.getElementById("header").src = "https://files.catbox.moe/b4pa7k.png";
+    document.body.background = "https://files.catbox.moe/7s2d0t.png";
+    $(".footer")[0].style.color = "#000";
+
+    // Game window texture overlay
+    $("#game_window")[0].style.backgroundImage = "url(https://files.catbox.moe/up8ih9.png)";
+
+    // Remove old injected styles
+    document.querySelectorAll("style[data-theme-style]").forEach(e => e.remove());
+
+    // Inject new styles for Light Mode
+    const style = document.createElement("style");
+    style.setAttribute("data-theme-style", "true");
+    style.innerHTML = `
+      #results_container { color:#000000; }
+      .inner_window_w_desc { background-color:#e6ecf0!important; }
+      #final_results_description h3,
+      #overall_details_container h3,
+      #overall_election_details h4,
+      #main_content_area_reading p,
+      #main_content_area_reading h3.results_tab_header,
+      .inner_window_w_desc h3,
+      .overlay_window h3,
+      p#credits {
+        color: black;
+      }
+    `;
+    document.head.appendChild(style);
+  },
+
+  "Dark Mode": function () {
+    document.getElementById("header").src = "https://files.catbox.moe/b4pa7k.png";
+    document.body.style.backgroundColor = "#1a1a1a";
+    document.body.background = "https://i.imgur.com/rWpi0iE.png";
+    $(".container")[0].style.backgroundColor = "#222";
+
+    $(".game_header")[0].style.backgroundColor = "#333";
+    const gameWindow = $("#game_window")[0];
+    $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/Tuj0PE4.png)";
+    gameWindow.style.borderColor = "#444";
+
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000000";
+    nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#303030";
+    $(".footer")[0].style.color = "#fff";
+
+    // Remove old injected styles
+    document.querySelectorAll("style[data-theme-style]").forEach(e => e.remove());
+
+    // Inject new styles for Dark Mode
+    const style = document.createElement("style");
+    style.setAttribute("data-theme-style", "true");
+    style.innerHTML = `
+      #results_container { color:#000000; }
+      .inner_window_w_desc { background-color:#363636!important; }
+      #final_results_description h3,
+      #overall_details_container h3,
+      #overall_election_details h4,
+      #main_content_area_reading p,
+      #main_content_area_reading h3.results_tab_header,
+      .inner_window_w_desc h3,
+      .overlay_window h3,
+      p#credits {
+        color: white;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+};
+
+// ======== Theme Picker ========
+const themePicker = document.getElementById("themePicker");
+const newThemePicker = document.createElement("select");
+newThemePicker.id = "themePicker";
+newThemePicker.addEventListener("change", gameThemePicked);
+
+let newInnerHTML = "";
+for (let theme in gameThemes) {
+  newInnerHTML += `<option value="${theme}">${theme}</option>`;
+}
+newThemePicker.innerHTML = newInnerHTML;
+themePicker.replaceWith(newThemePicker);
+
+function gameThemePicked() {
+  gameThemes[newThemePicker.value]();
+}
+
+// Set default theme
+gameThemePicked();
+
 //#endcode
