@@ -503,24 +503,28 @@ var soundtracks = {
         "url": "https://audio.jukehost.co.uk/dwIhc8BTKkAkEFlNdishgxTQFp2w7hP8"
       },
       {
-        "name": "ElyOtto - SUGARCRASH!",
-        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+        "name": "Claire Rosinkranz - Backyard Boy",
+        "url": "https://audio.jukehost.co.uk/eoIUyce7mKI9tkHfdTOhUacn4THTpVL5"
       },
       {
-        "name": "ElyOtto - SUGARCRASH!",
-        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+        "name": "Powfu - Death Bed",
+        "url": "https://audio.jukehost.co.uk/uklNR6tIvIFbKAkZeuLqo3GtsTUgD4r0"
       },
       {
-        "name": "ElyOtto - SUGARCRASH!",
-        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+        "name": "BENEE - Supalonely",
+        "url": "https://audio.jukehost.co.uk/oK4WjfziZDAuotJSgunVbdxzjfjLk6e1"
       },
       {
-        "name": "ElyOtto - SUGARCRASH!",
-        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+        "name": "Pop Smoke - What You Know Bout Love",
+        "url": "https://audio.jukehost.co.uk/Efmz7UZFB7jGNeGFceaiXehPyNID6QcY"
       },
       {
-        "name": "ElyOtto - SUGARCRASH!",
-        "url": "https://audio.jukehost.co.uk/sjUhik1xOzWiIwk9XTJ1SqHStGDzWNNV"
+        "name": "Internet Money ft. Don Toliver, Gunna & NAV - Lemonade",
+        "url": "https://audio.jukehost.co.uk/5fd9XrAg1M9BfdMfk86dPtMfMNClg7Pl"
+      },
+      {
+        "name": "Tessa Netting - The 2020 Song",
+        "url": "https://audio.jukehost.co.uk/EgXqzoMVGqkJSqcxWA9La6RP2YCxMSI5"
       }
     ]
   }
@@ -754,5 +758,6 @@ function gameThemePicked() {
 gameThemePicked();
 
 //#endcode
+
 
 
