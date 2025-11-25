@@ -54,7 +54,7 @@ campaignTrail_temp.candidate_json = [
             "description": "<p>President Donald Trump enters the campaign with the advantages of incumbency, yet seems to be the underdog for a second time. Can Trump piece together a winning coalition again, and will it be the same one that got him over the finish line in 2016? The pandemic and Black Lives Matter movement only serve to complicate his task even further.</p>",
             "color_hex": "#FF0000",
             "secondary_color_hex": "#FFA0A0",
-            "is_active": 1,
+            "is_active": 0,
             "image_url": "https://www.jetsimon.com/public/static/images/donald-trump-2020.jpg",
             "electoral_victory_message": "<h3>Congratulations! You have won the 2020 election.</h3><p>For the second time in a row, many analysts saw a victory for you as practically impossible. But whatever they say, it is clear that your Make America Great Again agenda has been vindicated. Where do you take things from here?</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2020 election.</h3><p>After an election in which many of your supporters claimed democracy itself was at stake, what happens now? Many analysts believe the party will need to go in a completely different direction next time. As for yourself, will you take these results sitting down, or will you prepare yourself for an epic political comeback in 2024?</p>",
