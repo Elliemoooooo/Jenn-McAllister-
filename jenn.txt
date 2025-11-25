@@ -29,7 +29,7 @@ campaignTrail_temp.election_json = [
         "pk": 20,
         "fields": {
             "year": 2028,
-            "display_year": "2028 - No Kings",
+            "display_year": "2028 - WMHA",
             "summary": "<p>The 2020s saw the complete and utter destruction of American democracy under the Republican Party, with a mangled opposition pathetically fighting back against it. In 2027, the fascist scum had done the impossible: they had overturned the 22nd Amendment. The Democrats frantically searched for a viable nominee, ultimately focusing on Joe Walsh, a former Tea Party congressman turned born-again Democrat.</p>\n\n<p>Walsh faces a challenging path in a primary crowded with formidable contenders such as Gavin Newsom and Kamala Harris. However, if he can manage that, he can finally face this tyrannical dictator once again (on a much more even playing field this time).</p>",
             "image_url": "https://files.catbox.moe/hljuze.png",
             "winning_electoral_vote_number": 270,
@@ -57,17 +57,17 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 1001,
         "fields": {
-            "first_name": "Joe",
-            "last_name": "Walsh",
+            "first_name": "Jennifer",
+            "last_name": "McAllister",
             "election": 20,
             "party": "Democratic",
-            "state": "Illinois",
+            "state": "California",
             "priority": 1,
             "description": "<div style='overflow-y:scroll;height:230px;'><p>The Democratic Party, following the overturning of the 22nd Amendment, became desperate. With Donald Trump more popular and tyrannical than ever, the Democrats scrambled to find a heavy hitter. They became weary of Trumpian bombast and ultimately decided that if you can't beat the devil, you have to send one of his former disciples. Here enters Joe Walsh.</p>\n\n\n\n<p>Walsh is a man with a plethora of contradictions. Formerly a conservative political commentator and a Tea Party extraordinaire, he was a man who often preached the gospel of Trump on a daily basis. However, ever since 2020, Walsh had seen the light, now marching with a \"No Kings\" banner and promptly denouncing Trump's run for a third term amidst the birth of the American Monarchy.</p>\n\n\n\n<p>He sees himself as Cincinnatus, returned from the plough, but to most voters, he's just a man who mistook Twitter for real life. Last time he ran for president, he couldn't even get a crowd to fill a sarcophagus, let alone an entire stadium. If he wants people to take his campaign seriously, he'll have to prove his fighting spirit to the American people and take on Mango Mussolini to secure our nation's democracy.</p></div>",
             "color_hex": "#0000FF",
             "secondary_color_hex": null,
             "is_active": 1,
-            "image_url": "https://files.catbox.moe/8uk4f9.png",
+            "image_url": "https://file.garden/Z5ZdT2XMBSWGuJym/jenn1",
             "electoral_victory_message": "This guy wins!",
             "electoral_loss_message": "This guy loses!",
             "no_electoral_majority_message": "We all win?",
@@ -935,3 +935,4 @@ const gameWindow_player = document.getElementById("game_window");
 setupMusicPlayer();
 
 //#endcode
+
