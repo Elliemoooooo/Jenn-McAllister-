@@ -616,7 +616,7 @@ jet_data = {
     "containerColor": "#e9e7e3",
     "innerWindowColor": "#d4d0c8",
     "bannerImageUrl": "https://files.catbox.moe/82nzow.gif",
-    "backgroundImageUrl": "https://i.imgur.com/n7goidf.png",
+    "backgroundImageUrl": "https://files.catbox.moe/m8t5kh.png",
     "endingTextColor": "#000000",
     "customQuote": "\"Our intent will not be to create gridlock. Oh, except maybe from time to time.\" - President Dole",
     "gameTitle": "Bob's Macarena."
@@ -693,7 +693,7 @@ button.onclick = toggleOverlay;
   corrr = `
   <div style="font-size: 11px; font-family: monospace; color: white;">
     <h2 style="font-style: normal;">
-      <img src="https://i.imgur.com/jDwSgBy.gif" alt="Bob's Macarena" style="margin-top: 15px;">
+      <img src="https://files.catbox.moe/zo6nqb.gif" alt="Bob's Macarena" style="margin-top: 15px;">
     </h2>
   </div>
   `;
@@ -738,9 +738,9 @@ $("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selected
 
 $(".container")[0].style.backgroundColor = "#e9e7e3";
 
-document.getElementById("header").src = "https://i.imgur.com/tMv8RZ0.gif";
+document.getElementById("header").src = "https://files.catbox.moe/82nzow.gif";
 
-document.body.background = "https://i.imgur.com/m9sFFRH.png";
+document.body.background = "https://files.catbox.moe/6g6ouf.png";
 
 document.body.style.backgroundSize="cover"
 
